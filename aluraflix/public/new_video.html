@@ -15,7 +15,6 @@
         <title>AluraFlix</title>
     </head>
     <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
         <header>
             <img
@@ -28,6 +27,53 @@
                 <button id="new_video">Novo Video</button>
             </div>
         </header>
+
+        <main>
+            <div id="main_title">
+                <h1>NOVO VÍDEO</h1>
+                <p>Complete o formulário para criar um novo card de vídeo.</p>
+            </div>
+
+            <div id="form">
+                <div id="title_form"><h1>Criar Card</h1></div>
+
+                <div id="linha_1">
+                    <label for="input_tit">Título</label>
+                    <input
+                        name="input_tit"
+                        type="text"
+                        value="Coloque um Título"
+                        id="input_tit"
+                    />
+                    <label for="select_cat">Categorias</label>
+
+                    <select name="select_cat" id="select_cat">
+                        <option value="Front End">Front End</option>
+                        <option value="Back End">Back End</option>
+                        <option value="Mobile">Mobile</option>
+                    </select>
+                </div>
+                <div id="linha_2">
+                    <label for="input_img">Imagem</label>
+                    <input type="link" name="input_img" id="input_img" />Digite
+                    o link da Imagem
+                    <label for="input_Vídeo">Vídeo</label>
+                    <input
+                        type="link"
+                        name="input_link"
+                        id="input_link"
+                    />Digite o link do Vídeo
+                </div>
+                <div id="linha_3">
+                    <label for="input_des">Descrição</label>
+                    <input type="text" name="input_des" id="input_des" />Sobre o que é esse vídeo?
+                </div>
+                <div id="buttons">
+                    <button id="guardar">Guardar</button>
+                    <button id="Limpar">Limpar</button>
+                </div>
+            </div>
+        </main>
 
         <footer>
             <img
